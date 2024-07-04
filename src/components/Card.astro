@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import supervisor from "@/assets/icon-supervisor.svg";
+
+interface Props {
+  title: string;
+  content: string;
+  image?: string;
+}
+
+const { title, content } = Astro.props;
+---
+
+<section
+  class="rounded-md border border-t-4 border-secondaryLightGray border-t-primaryCyan bg-white p-6 shadow-2xl"
+>
+  <h2>{title}</h2>
+  <p>{content}</p>
+  <Image src={supervisor} alt="Supervisor" loading={"eager"} />
+</section>

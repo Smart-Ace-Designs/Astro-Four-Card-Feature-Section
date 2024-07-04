@@ -1,6 +1,7 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import Image from "astro/components/Image.astro";
+import Card from "@/components/Card.astro";
 
 import calculator from "@/assets/icon-calculator.svg";
 import karma from "@/assets/icon-karma.svg";
@@ -27,13 +28,11 @@ import teamBuilder from "@/assets/icon-team-builder.svg";
     </p>
 
     <div class="grid grid-cols-1 gap-6">
-      <section
-        class="rounded-md border border-t-4 border-secondaryLightGray border-t-primaryCyan bg-white p-6 shadow-2xl"
-      >
-        <h2>Supervisor</h2>
-        <p>Monitors activity to identify project roadblocks</p>
-        <Image src={supervisor} alt="Supervisor" loading={"eager"} />
-      </section>
+      <Card
+        title="Supervisor"
+        content="Monitors activity to identify project roadblocks"
+        image="/assets/icon-supervisor.svg"
+      />
       <section
         class="rounded-md border border-t-4 border-secondaryLightGray border-t-primaryRed bg-white p-6 shadow-2xl"
       >
