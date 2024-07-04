@@ -1,5 +1,11 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import Image from "astro/components/Image.astro";
+
+import calculator from "@/assets/icon-calculator.svg";
+import karma from "@/assets/icon-karma.svg";
+import supervisor from "@/assets/icon-supervisor.svg";
+import teamBuilder from "@/assets/icon-team-builder.svg";
 ---
 
 <MainLayout title="Frontend Mentor | Four Card Feature">
@@ -14,20 +20,24 @@ import MainLayout from "@/layouts/MainLayout.astro";
   <section>
     <h2>Supervisor</h2>
     <p>Monitors activity to identify project roadblocks</p>
+    <Image src={supervisor} alt="Supervisor" loading={"eager"} />
   </section>
 
   <section>
     <h2>Team Builder</h2>
     <p>Scans our talent network to create the optimal team for your project</p>
+    <Image src={teamBuilder} alt="Team Builder" loading={"eager"} />
   </section>
 
   <section>
     <h2>Karma</h2>
     <p>Regularly evaluates our talent to ensure quality</p>
+    <Image src={karma} alt="Karma" loading={"eager"} />
   </section>
 
   <section>
     <h2>Calculator</h2>
     <p>Uses data from past projects to provide better delivery estimates</p>
+    <Image src={calculator} alt="Calculator" loading={"eager"} />
   </section>
 </MainLayout>
