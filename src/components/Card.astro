@@ -1,20 +1,27 @@
 ---
 import { Image } from "astro:assets";
-import supervisor from "@/assets/icon-supervisor.svg";
+import type { ImageMetadata } from "astro";
 
 interface Props {
   title: string;
   content: string;
-  image?: string;
+  image: string;
+  classes?: string;
 }
+const { title, content, image, classes } = Astro.props;
 
-const { title, content } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>("@/assets/*.svg");
+if (!images[image])
+  throw new Error(`"${image}" does not exist in glob: "@/assets/*.svg}"`);
 ---
 
 <section
-  class="rounded-md border border-t-4 border-secondaryLightGray border-t-primaryCyan bg-white p-6 shadow-2xl"
+  class:list={[
+    classes,
+    "rounded-md border border-t-4 border-secondaryLightGray bg-white p-6 shadow-2xl",
+  ]}
 >
   <h2>{title}</h2>
   <p>{content}</p>
-  <Image src={supervisor} alt="Supervisor" loading={"eager"} />
+  <Image src={images[image]()} alt={title} loading={"eager"} />
 </section>

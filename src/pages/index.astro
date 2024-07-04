@@ -1,12 +1,6 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
-import Image from "astro/components/Image.astro";
 import Card from "@/components/Card.astro";
-
-import calculator from "@/assets/icon-calculator.svg";
-import karma from "@/assets/icon-karma.svg";
-import supervisor from "@/assets/icon-supervisor.svg";
-import teamBuilder from "@/assets/icon-team-builder.svg";
 ---
 
 <MainLayout title="Frontend Mentor | Four Card Feature">
@@ -31,31 +25,27 @@ import teamBuilder from "@/assets/icon-team-builder.svg";
       <Card
         title="Supervisor"
         content="Monitors activity to identify project roadblocks"
-        image="/assets/icon-supervisor.svg"
+        image="/src/assets/icon-supervisor.svg"
+        classes="border-t-primaryCyan"
       />
-      <section
-        class="rounded-md border border-t-4 border-secondaryLightGray border-t-primaryRed bg-white p-6 shadow-2xl"
-      >
-        <h2>Team Builder</h2>
-        <p>
-          Scans our talent network to create the optimal team for your project
-        </p>
-        <Image src={teamBuilder} alt="Team Builder" loading={"eager"} />
-      </section>
-      <section
-        class="rounded-md border border-t-4 border-secondaryLightGray border-t-primaryOrange bg-white p-6 shadow-2xl"
-      >
-        <h2>Karma</h2>
-        <p>Regularly evaluates our talent to ensure quality</p>
-        <Image src={karma} alt="Karma" loading={"eager"} />
-      </section>
-      <section
-        class="rounded-md border border-t-4 border-secondaryLightGray border-t-primaryBlue bg-white p-6 shadow-2xl"
-      >
-        <h2>Calculator</h2>
-        <p>Uses data from past projects to provide better delivery estimates</p>
-        <Image src={calculator} alt="Calculator" loading={"eager"} />
-      </section>
+      <Card
+        title="Team Builder"
+        content="Scans our talent network to create the optimal team for your project"
+        image="/src/assets/icon-team-builder.svg"
+        classes="border-t-primaryRed"
+      />
+      <Card
+        title="Karma"
+        content="Regularly evaluates our talent to ensure quality"
+        image="/src/assets/icon-karma.svg"
+        classes="border-t-primaryOrange"
+      />
+      <Card
+        title="Calculator"
+        content="Uses data from past projects to provide better delivery estimates"
+        image="/src/assets/icon-calculator.svg"
+        classes="border-t-primaryBlue"
+      />
     </div>
   </div>
 </MainLayout>
