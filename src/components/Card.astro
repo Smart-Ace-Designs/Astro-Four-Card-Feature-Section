@@ -18,10 +18,12 @@ if (!images[image])
 <section
   class:list={[
     classes,
-    "rounded-md border border-t-4 border-secondaryLightGray bg-white p-6 shadow-2xl",
+    "mx-auto w-[300px] rounded-md border border-t-4 border-secondaryLightGray bg-white p-6 shadow-2xl",
   ]}
 >
-  <h2>{title}</h2>
-  <p>{content}</p>
-  <Image src={images[image]()} alt={title} loading={"eager"} />
+  <h2 class="mb-2 text-xl font-semibold text-secondaryVeryDarkBlue">{title}</h2>
+  <p class="mb-8 text-[13px] leading-6 text-secondaryGrayishBlue">{content}</p>
+  <div class="flex justify-end">
+    <Image src={images[image]()} alt={title} loading={"eager"} width="60" />
+  </div>
 </section>
