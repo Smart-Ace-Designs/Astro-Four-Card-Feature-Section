@@ -4,48 +4,57 @@ import Card from "@/components/Card.astro";
 ---
 
 <MainLayout title="Frontend Mentor | Four Card Feature">
-  <div class="mx-auto my-[90px] w-[320px] md:w-[500px]">
-    <h1
-      class="text-center text-[24px] font-extralight text-secondaryVeryDarkBlue md:pb-4 md:text-4xl"
-    >
-      Reliable, efficient delivery
-    </h1>
-    <h2
-      class="mb-4 text-center text-[24px] font-semibold text-secondaryVeryDarkBlue md:mb-6 md:text-4xl"
-    >
-      Powered by Technology
-    </h2>
+  <div class="my-[90px]">
+    <div class="mx-auto w-[320px] lg:w-[500px]">
+      <h1
+        class="text-center text-[24px] font-extralight text-secondaryVeryDarkBlue lg:pb-4 lg:text-4xl"
+      >
+        Reliable, efficient delivery
+      </h1>
+      <h2
+        class="mb-4 text-center text-[24px] font-semibold text-secondaryVeryDarkBlue lg:mb-6 lg:text-4xl"
+      >
+        Powered by Technology
+      </h2>
+      <p class="mb-20 text-center text-secondaryGrayishBlue">
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </div>
 
-    <p class="mb-20 text-center text-secondaryGrayishBlue">
-      Our Artificial Intelligence powered tools use millions of project data
-      points to ensure that your project is successful
-    </p>
-
-    <div class="grid grid-cols-1 gap-6">
-      <Card
-        title="Supervisor"
-        content="Monitors activity to identify project roadblocks"
-        image="/src/assets/icon-supervisor.svg"
-        classes="border-t-primaryCyan"
-      />
-      <Card
-        title="Team Builder"
-        content="Scans our talent network to create the optimal team for your project"
-        image="/src/assets/icon-team-builder.svg"
-        classes="border-t-primaryRed"
-      />
-      <Card
-        title="Karma"
-        content="Regularly evaluates our talent to ensure quality"
-        image="/src/assets/icon-karma.svg"
-        classes="border-t-primaryOrange"
-      />
-      <Card
-        title="Calculator"
-        content="Uses data from past projects to provide better delivery estimates"
-        image="/src/assets/icon-calculator.svg"
-        classes="border-t-primaryBlue"
-      />
+    <div
+      class="mx-auto grid w-[320px] grid-cols-1 gap-6 lg:w-[1000px] lg:grid-cols-3"
+    >
+      <div class="lg:flex lg:h-full lg:items-center lg:justify-center">
+        <Card
+          title="Supervisor"
+          content="Monitors activity to identify project roadblocks"
+          image="/src/assets/icon-supervisor.svg"
+          classes="border-t-primaryCyan"
+        />
+      </div>
+      <div class="grid gap-6 lg:flex lg:flex-col lg:gap-6">
+        <Card
+          title="Team Builder"
+          content="Scans our talent network to create the optimal team for your project"
+          image="/src/assets/icon-team-builder.svg"
+          classes="border-t-primaryRed"
+        />
+        <Card
+          title="Karma"
+          content="Regularly evaluates our talent to ensure quality"
+          image="/src/assets/icon-karma.svg"
+          classes="border-t-primaryOrange"
+        />
+      </div>
+      <div class="lg:flex lg:h-full lg:items-center lg:justify-center">
+        <Card
+          title="Calculator"
+          content="Uses data from past projects to provide better delivery estimates"
+          image="/src/assets/icon-calculator.svg"
+          classes="border-t-primaryBlue"
+        />
+      </div>
     </div>
   </div>
 </MainLayout>
