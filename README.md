@@ -10,11 +10,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -25,36 +21,27 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
+![four-card-feature](https://github.com/Smart-Ace-Designs/Astro-Four-Card-Feature-Section/assets/132539186/032b7a31-43a0-40fa-8bb2-14d450137ad7)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Smart-Ace-Designs/Astro-Four-Card-Feature-Section)
+- Live Site URL: [Netlify](https://smartacedesigns-astro-4card-feature.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Astro
+- Astro [Space](https://github.com/Smart-Ace-Designs/Astro-Space) Template
+- Tailwind CSS
 - Flexbox
 - CSS Grid
+- Bun
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-### What I learned
-
-### Continued development
-
-### Useful resources
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Smart Ace Designs (GitHub)](https://github.com/Smart-Ace-Designs)
+- Frontend Mentor - [@smart-ace-designs](https://www.frontendmentor.io/profile/Smart-Ace-Designs)
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
