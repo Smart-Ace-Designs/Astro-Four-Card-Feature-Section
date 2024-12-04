@@ -21,6 +21,7 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
+
 ![four-card-feature](https://github.com/Smart-Ace-Designs/Astro-Four-Card-Feature-Section/assets/132539186/032b7a31-43a0-40fa-8bb2-14d450137ad7)
 
 ### Links
@@ -44,4 +45,3 @@ Users should be able to:
 
 - Website - [Smart Ace Designs (GitHub)](https://github.com/Smart-Ace-Designs)
 - Frontend Mentor - [@smart-ace-designs](https://www.frontendmentor.io/profile/Smart-Ace-Designs)
-
