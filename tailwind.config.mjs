@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryRed: "hsl(0, 78%, 62%)",
-        primaryCyan: "hsl(180, 62%, 55%)",
-        primaryOrange: "hsl(34, 97%, 64%)",
-        primaryBlue: "hsl(212, 86%, 64%)",
-        secondaryVeryDarkBlue: "hsl(234, 12%, 34%)",
-        secondaryGrayishBlue: "hsl(229, 6%, 66%)",
-        secondaryLightGray: "hsl(0, 0%, 98%)",
+        "theme-red": "hsl(0, 78%, 62%)",
+        "theme-cyan": "hsl(180, 62%, 55%)",
+        "theme-orange": "hsl(34, 97%, 64%)",
+        "theme-blue": "hsl(212, 86%, 64%)",
+        "theme-very-dark-blue": "hsl(234, 12%, 34%)",
+        "theme-grayish-blue": "hsl(229, 6%, 66%)",
+        "theme-light-gray": "hsl(0, 0%, 98%)",
       },
       fontFamily: {
         poppins: ["Poppins", "san-serif"],
