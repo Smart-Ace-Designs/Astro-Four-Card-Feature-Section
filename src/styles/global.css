@@ -1,5 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-theme-red: hsl(0, 78%, 62%);
+  --color-theme-cyan: hsl(180, 62%, 55%);
+  --color-theme-orange: hsl(34, 97%, 64%);
+  --color-theme-blue: hsl(212, 86%, 64%);
+  --color-theme-very-dark-blue: hsl(234, 12%, 34%);
+  --color-theme-grayish-blue: hsl(229, 6%, 66%);
+  --color-theme-light-gray: hsl(0, 0%, 98%);
+
+  --font-poppins: Poppins, san-serif;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-ExtraLight.ttf") format("truetype");
+    font-weight: 200; /* Extra Light */
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400; /* Regular */
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+    font-display: swap;
+  }
+}
