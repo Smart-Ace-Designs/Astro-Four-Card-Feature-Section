@@ -20,28 +20,28 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
 
-  @font-face {
-    font-family: "Poppins";
-    src: url("/fonts/Poppins-ExtraLight.ttf") format("truetype");
-    font-weight: 200; /* Extra Light */
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 200; /* Extra Light */
+  font-style: normal;
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "Poppins";
-    src: url("/fonts/Poppins-Regular.ttf") format("truetype");
-    font-weight: 400; /* Regular */
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "Poppins";
-    src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
-    font-weight: 600; /* SemiBold */
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+  font-display: swap;
 }
