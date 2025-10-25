@@ -11,14 +11,3 @@
 
   --font-poppins: Poppins, san-serif;
 }
-
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-}
-
