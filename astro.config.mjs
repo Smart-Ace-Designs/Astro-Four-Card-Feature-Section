@@ -15,7 +15,7 @@ export default defineConfig({
         provider: fontProviders.google(),
         name: "Poppins",
         cssVariable: "--font-poppins",
-        weights: ["200", "400", "600"],
+        weights: [200, 400, 600],
         styles: ["normal"],
         subsets: ["latin"],
       },
